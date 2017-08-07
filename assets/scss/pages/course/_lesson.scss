@@ -1,0 +1,214 @@
+.lesson-page {
+  background-color: $light;
+
+  @import 'lesson/quiz';
+  @import 'lesson/answers';
+  @import 'lesson/student-doubts';
+  @import 'lesson/notepad';
+  @import 'lesson/timetags';
+
+  .lesson-page-sidebar {
+    .lesson-list-header {
+      @include clearfix();
+      @include transition(background-color .2s ease);
+
+      &.scroll {
+        @include breakpoint(sm) {
+          position: static !important;
+          top: auto !important;
+          left: auto !important;
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+          width: auto !important;
+          height: auto !important;
+          background-color: transparent !important;
+        }
+
+        right: 0 !important;
+        left: 0 !important;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100% !important;
+        border-bottom: 1px solid $border-color-base;
+        background-color: $light;
+      }
+
+      .lesson-list-toggle {
+        @include breakpoint(sm) {
+          display: none;
+        }
+
+        float: left;
+        padding: 20px 0;
+
+        .btn {
+          .icon-arrow-left {
+            display: none;
+          }
+
+          &.active {
+            .icon-arrow-left {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .control-back {
+        @include breakpoint(sm) {
+          float: left;
+        }
+
+        float: right;
+      }
+    }
+
+    .lesson-list-panel {
+      @include transition(.2s ease);
+      @include box-shadow(none);
+      @include breakpoint(sm) {
+        @include box-shadow(0 2px 2px -2px rgba(0, 0, 0, .15));
+
+        position: static;
+        top: auto;
+        right: auto;
+        left: auto;
+        border-right-width: 1px;
+        border-left-width: 1px;
+        border-radius: $panel-border-radius;
+      }
+
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      z-index: 1000;
+      max-width: 100%;
+      width: 100%;
+      border-right-width: 0;
+      border-left-width: 0;
+      border-radius: 0;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    .title {
+      @include breakpoint(sm) {
+        font-size: $font-size-large;
+      }
+
+      margin: 0;
+      font-size: $font-size-base;
+    }
+
+    .course-progress {
+      .progress-header {
+        margin-bottom: $padding-large-vertical;
+
+        .label {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .other-lessons {
+      margin-top: $padding-large-vertical * 4;
+    }
+  }
+
+  .media-controls {
+    @include breakpoint(sm) {
+      text-align: right;
+    }
+
+    text-align: center;
+  }
+
+  .lesson-description {
+    margin-bottom: $padding-large-vertical * 4;
+  }
+
+  .lesson-content-player {
+    .lesson-content-player-heading {
+      .media-controls {
+        @include transition(.2s ease);
+
+        padding-top: $padding-large-vertical * 2;
+      }
+
+      .lesson-title {
+        @include breakpoint(sm) {
+          text-align: left;
+        }
+
+        margin: 0;
+        padding: 30.5px 0;
+        text-align: center;
+        font-size: 22px;
+        line-height: 1;
+      }
+
+      .scroll {
+        .media-controls {
+          margin-right: -10px;
+          opacity: .7;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .media-player {
+      position: relative;
+      margin-bottom: $padding-large-vertical * 4;
+
+      .player {
+        text-align: left;
+
+        .text-player {
+          float: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .html5-player,
+        #vzaar-player-container {
+          @extend .embed-responsive;
+          @extend .embed-responsive-16by9;
+
+          width: 100%;
+          height: auto;
+          border: 2px solid $border-color-base;
+          border-radius: $border-radius-base;
+
+          iframe {
+            @extend .embed-responsive-item;
+
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .lesson-tabs {
+    margin-top: $padding-large-vertical * 4;
+    width: 100%;
+
+    .nav-tabs {
+      border-bottom: none;
+    }
+  }
+
+  .footer-navigation {
+    @include breakpoint(sm) {
+      display: none;
+    }
+
+    margin-top: $padding-large-vertical * 4;
+    text-align: right;
+  }
+}

@@ -1,0 +1,13 @@
+.wrapper {
+  @include transition(opacity .2s ease);
+
+  opacity: 0;
+
+  &.loaded {
+    opacity: 1;
+  }
+}
+
+hr.payments {
+  border-color: #cecece;
+}
