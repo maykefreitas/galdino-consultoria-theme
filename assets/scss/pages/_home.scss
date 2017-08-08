@@ -1,6 +1,12 @@
 .home-page {
   padding: 0;
 
+  .home-slider {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+  }
+
   .home-categories {
     .home-category {
       .product-list {

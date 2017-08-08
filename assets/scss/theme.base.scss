@@ -1,6 +1,10 @@
 // Compass
 @import '../../bower_components/compass-sass-mixins/lib/compass';
+// External
+@import '../../bower_components/owl.carousel/src/scss/owl.carousel';
+@import '../../bower_components/owl.carousel/src/scss/owl.theme.default';
 
+// Base
 @import 'base/variables';
 @import 'components/mixins';
 @import 'base/fonts';

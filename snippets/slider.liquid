@@ -1,0 +1,15 @@
+<div class="slider">
+  <div class="owl-carousel owl-theme">
+    {% for slide in settings.view.home.slides %}
+      <div class="slide">
+        {% if slide.link.size > 3 %}
+          <a href="{{ slide.link }}" {% if slide.blank %}target="_blank"{% endif %}>
+            <img src="{{ slide.image }}" data-mobile="{{ slide.mobile_image }}" alt="">
+          </a>
+        {% else %}
+          <img src="{{ slide.image }}" data-mobile="{{ slide.mobile_image }}" alt="">
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

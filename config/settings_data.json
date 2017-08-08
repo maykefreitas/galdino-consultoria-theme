@@ -3,7 +3,6 @@
   "presets": {
     "Elegance": {
       "style": {
-
       },
       "view": {
         "general": {
@@ -19,7 +18,45 @@
         },
         "home": {
           "enable_categories": false,
-          "categories": []
+          "categories": [],
+          "slides": [
+            {
+              "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner001.1502161519.png",
+              "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile01.1502161506.png",
+              "link": "https://google.com",
+              "blank": true
+            },
+            {
+              "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner002.1502161507.png",
+              "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile02.1502161504.png",
+              "link": "",
+              "blank": false
+            },
+            {
+              "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner003.1502161509.png",
+              "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile03.1502161502.png",
+              "link": "",
+              "blank": false
+            },
+            {
+              "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner004.1502161511.png",
+              "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile04.1502161503.png",
+              "link": "",
+              "blank": false
+            },
+            {
+              "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner005.1502161513.png",
+              "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile05.1502161502.png",
+              "link": "",
+              "blank": false
+            },
+            {
+              "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner006.1502161514.png",
+              "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile06.1502161505.png",
+              "link": "",
+              "blank": false
+            }
+          ]
         }
       }
     }

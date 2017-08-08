@@ -1,4 +1,8 @@
 <div class="home-page page">
+  <div class="home-slider">
+    {% include 'slider' %}
+  </div>
+
   {% if settings.view.home.enable_categories == true %}
     {% include 'home/categories', gateway: gateway, categories: categories %}
   {% else %}

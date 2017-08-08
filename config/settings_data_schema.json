@@ -20,7 +20,50 @@
     "name": "Home Page",
     "id": "4",
     "settings": [
-
+      {
+        "template": "<h3>Slides</h3>"
+      },
+      {
+        "type": "repeatSection",
+        "key": "view.home.slides",
+        "templateOptions": {
+          "btnText": "Adicionar Novo Slide",
+          "fields": [
+            {
+              "key": "image",
+              "type": "input",
+              "templateOptions": {
+                "label": "Url da Imagem",
+                "required": true
+              }
+            },
+            {
+              "key": "mobile_image",
+              "type": "input",
+              "templateOptions": {
+                "label": "Url da Imagem para Mobile",
+                "required": false
+              }
+            },
+            {
+              "key": "link",
+              "type": "input",
+              "templateOptions": {
+                "label": "Url do Link",
+                "required": false
+              }
+            },
+            {
+              "key": "blank",
+              "type": "checkbox",
+              "templateOptions": {
+                "label": "Abrir link em nova aba",
+                "required": false
+              }
+            }
+          ]
+        }
+      }
     ]
   },
   {
