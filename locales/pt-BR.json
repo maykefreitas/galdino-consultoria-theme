@@ -159,7 +159,7 @@
     "cart": "Carrinho",
     "categories": "Categorias",
     "forum": "Fóruns",
-    "sign_in": "<i class=\"icon-user\"></i> Entrar",
+    "sign_in": "<i class=\"img-icon img-icon-user\"></i>",
     "my_courses": "Meus cursos",
     "public_profile": "Perfil público",
     "my_profile": "Meu Perfil",

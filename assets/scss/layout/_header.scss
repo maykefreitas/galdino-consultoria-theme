@@ -29,8 +29,8 @@ header.navbar {
 
   .navbar-nav {
     a {
-      font-weight: 600;
-      font-size: 16px;
+      font-weight: normal;
+      font-size: 18px;
 
       i {
         margin-right: 2px;
@@ -38,9 +38,85 @@ header.navbar {
     }
 
     li {
+      position: relative;
+
+      a {
+        padding-right: 17px !important;
+        padding-left: 17px !important;
+      }
+
+      &.list-item-icon {
+        a {
+          padding: 39px 8px !important;
+
+          &:hover {
+            opacity: .6;
+          }
+
+          i {
+            margin: 0;
+          }
+        }
+
+        &:last-child {
+          a {
+            padding-right: 0 !important;
+          }
+        }
+      }
+
       &.mobile {
         @include breakpoint($grid-float-breakpoint-max) {
           display: none;
+        }
+      }
+
+      > .submenu {
+        position: absolute;
+        top: 120%;
+        left: 0;
+        visibility: hidden;
+        margin: -5px 0 0;
+        padding: 0;
+        background-color: $light;
+        box-shadow: 0 6px 30px -4px rgba(0, 0, 0, .4);
+        list-style: none;
+        opacity: 0;
+        transition: .25s ease-in-out;
+        pointer-events: none;
+
+        > li {
+          border-bottom: 1px solid darken($border-color-base, 15%);
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          > a {
+            display: block;
+            padding: 10px 8px;
+            min-width: 190px;
+            color: $navbar-default-link-color;
+            text-decoration: none;
+
+            &:hover {
+              background-color: $brand-secondary;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        > .submenu {
+          top: 100%;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: all;
+        }
+
+        > a {
+          font-weight: bold;
         }
       }
     }

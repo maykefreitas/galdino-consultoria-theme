@@ -54,6 +54,12 @@
 
   {{ content_for_header }}
 
+  <style>
+    .img-icon {
+      background-image: url({{ 'galdino-icons.png' | asset_url }});
+    }
+  </style>
+
   <script src="{{ 'theme.base.vendors.min.js' | asset_url }}"></script>
   <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
   <script async src="{{ 'theme.js' | asset_url }}"></script>
@@ -61,7 +67,8 @@
   <script async src="{{ 'theme.js' | asset_url }}"></script>
 
 </head>
-<body class="{% if current_path == '/' %}home-page{% elsif product %}product-page{% elsif current_path == '/chat' %}chat-page{% endif %}">
+<body
+  class="{% if current_path == '/' %}home-page{% elsif product %}product-page{% elsif current_path == '/chat' %}chat-page{% endif %}">
 <div class="content-wrapper">
   {% include 'navbar' %}
   {% include 'alert-notice' %}

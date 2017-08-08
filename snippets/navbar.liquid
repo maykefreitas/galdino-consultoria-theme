@@ -20,15 +20,38 @@
 
         {% if current_user == nil or current_user.type == 'Student' %}
           <li>
+            <a href="/pages/institucional">Institucional</a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Cursos <i class="caret"></i></span>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="/categories/online">Online</a>
+              </li>
+              <li>
+                <a href="/categories/presenciais">Presenciais</a>
+              </li>
+              <li>
+                <a href="/categories/incompany">inCompany</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/pages/parceiros">Parceiros</a>
+          </li>
+          <li>
+            <a href="/pages/contato">Contato</a>
+          </li>
+          <li class="list-item-icon">
             <a href="/cart">
-              <i class="icon-basket"></i>
-              <span>{{ 'navbar.cart' | t }}</span>
+              <i class="img-icon img-icon-cart"></i>
             </a>
           </li>
         {% else %}
           <li>
             <a href="{{ current_user | sso_admin_path: current_api_key }}">
-              <i class="icon-settings"></i>
               <span>{{ 'navbar.admin' | t }}</span>
             </a>
           </li>
@@ -38,7 +61,6 @@
         {% if current_user %}
           <li>
             <a href="/forums">
-              <i class="icon-bubble"></i>
               <span>{{ 'navbar.forum' | t }}</span>
             </a>
           </li>
@@ -46,27 +68,22 @@
           {% if current_user.type == 'Student' %}
             <li>
               <a href="/enrollments">
-                <i class="icon-notebook"></i>
                 <span>{{ 'navbar.my_courses' | t }}</span>
               </a>
             </li>
 
             <li>
               <a href="/certificates">
-                <i class="icon-graduation"></i>
                 <span>{{ 'navbar.my_certificates' | t }}</span>
               </a>
             </li>
             {% elsif current_user.type == 'Collaborator' %}
             <li>
               <a href="/courses">
-                <i class="icon-notebook"></i>
                 <span>{{ 'navbar.my_courses' | t }}</span>
               </a>
             </li>
           {% endif %}
-
-
 
           {% include 'navbar-user-links', mobile_class: true %}
 
@@ -85,7 +102,7 @@
           </li>
 
         {% else %}
-          <li>{{ 'navbar.sign_in' | t | login_link }}</li>
+          <li class="list-item-icon">{{ 'navbar.sign_in' | t | login_link }}</li>
         {% endif %}
       </ul>
     </div>
