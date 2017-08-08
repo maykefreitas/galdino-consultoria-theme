@@ -46,7 +46,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: 'Proxima Nova', Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif: Helvetica, Arial, sans-serif !default;
 $font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
@@ -146,15 +146,15 @@ $table-border-color: $border-color-base !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight: 400 !default;
+$btn-font-weight: 600 !default;
 
 $btn-default-color: $text-color !default;
 $btn-default-bg: $light !default;
 $btn-default-border: $border-color-base !default;
 
-$btn-primary-color: $light !default;
-$btn-primary-bg: $brand-primary !default;
-$btn-primary-border: $btn-primary-bg !default;
+$btn-primary-color: $brand-primary !default;
+$btn-primary-bg: $brand-secondary !default;
+$btn-primary-border: $brand-secondary !default;
 
 $btn-success-color: $light !default;
 $btn-success-bg: $brand-success !default;
@@ -175,7 +175,7 @@ $btn-danger-border: $btn-danger-bg !default;
 $btn-link-disabled-color: $gray-light !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius-base: $border-radius-base !default;
+$btn-border-radius-base: 23px !default;
 $btn-border-radius-large: $border-radius-large !default;
 $btn-border-radius-small: $border-radius-small !default;
 

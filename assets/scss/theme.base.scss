@@ -7,7 +7,6 @@
 // Base
 @import 'base/variables';
 @import 'components/mixins';
-@import 'base/fonts';
 @import 'base/icons';
 @import 'base/scaffolding';
 @import 'base/text';
@@ -73,6 +72,7 @@
 @import 'widgets/pinboard';
 @import 'widgets/dropzone';
 @import 'widgets/ckeditor';
+@import 'widgets/featured';
 // Layout
 @import 'layout/header';
 @import 'layout/footer';

@@ -57,6 +57,46 @@
               "blank": false
             }
           ]
+        },
+        "featured": {
+          "cover": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/galdino.1502212696.png",
+          "title": "Curso: Como obter <b>sucesso</b> em entrevistas",
+          "subtitle": "Faça já a inscrição e ganhe desconto!",
+          "old_price": "399,00",
+          "price": "299,00",
+          "installment_times": 12,
+          "installment_price": "26,66",
+          "cta": "Matricule-se já! Últimas Vagas!",
+          "cta_btn_text": "Matricule-se",
+          "cta_btn_link": "https://google.com",
+          "cta_btn_blank": true,
+          "topics": [
+            {
+              "text": "Conheça as exigências do entrevistador"
+            },
+            {
+              "text": "Aprenda a elaborar uma redação eficaz"
+            },
+            {
+              "text": "Saiba tudo sobre Dinâmica de Grupo"
+            },
+            {
+              "text": "Ganhe carga horária complementar"
+            },
+            {
+              "text": "Entenda como ser aprovado em uma entrevista"
+            },
+            {
+              "text": "Aprenda a elaborar um currículo de sucesso"
+            },
+            {
+              "text": "Tenha segurança na entrevista"
+            },
+            {
+              "text": "Entenda como vender sua imagem"
+            }
+          ],
+          "bottom_text": "Receba o certificado ao término do curso!"
         }
       }
     }

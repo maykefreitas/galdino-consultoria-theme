@@ -1,5 +1,4 @@
 [
-
   {
     "name": "Navbar",
     "id": "3",
@@ -111,14 +110,147 @@
     "name": "Produto",
     "id": "6",
     "settings": [
-
+    ]
+  },
+  {
+    "name": "Destaque",
+    "id": "7",
+    "settings": [
+      {
+        "key": "view.featured.cover",
+        "type": "input",
+        "templateOptions": {
+          "label": "Url da Imagem",
+          "required": true,
+          "placeholder": "https://example.com/my-image.jpg"
+        }
+      },
+      {
+        "key": "view.featured.title",
+        "type": "input",
+        "templateOptions": {
+          "label": "Título",
+          "required": true,
+          "placeholder": "Curso: Como obter <b>sucesso</b> em entrevistas"
+        }
+      },
+      {
+        "key": "view.featured.subtitle",
+        "type": "input",
+        "templateOptions": {
+          "label": "Subtítulo",
+          "required": true,
+          "placeholder": "Faça já sua inscrição e ganhe desconto!"
+        }
+      },
+      {
+        "key": "view.featured.old_price",
+        "type": "input",
+        "templateOptions": {
+          "label": "Preço Antigo",
+          "required": false,
+          "placeholder": "390,00"
+        }
+      },
+      {
+        "key": "view.featured.price",
+        "type": "input",
+        "templateOptions": {
+          "label": "Preço",
+          "required": true,
+          "placeholder": "299,00"
+        }
+      },
+      {
+        "key": "view.featured.installment_times",
+        "type": "input",
+        "templateOptions": {
+          "type": "number",
+          "min": 1,
+          "label": "Parcelado em",
+          "required": false,
+          "placeholder": "12"
+        }
+      },
+      {
+        "key": "view.featured.installment_price",
+        "type": "input",
+        "templateOptions": {
+          "label": "Parcelas de",
+          "required": false,
+          "placeholder": "26,66"
+        }
+      },
+      {
+        "key": "view.featured.cta",
+        "type": "input",
+        "templateOptions": {
+          "label": "Texto do Matricule-se",
+          "required": false,
+          "placeholder": "Matricule-se já! Últimas Vagas!"
+        }
+      },
+      {
+        "key": "view.featured.cta_btn_text",
+        "type": "input",
+        "templateOptions": {
+          "label": "Texto do Botão",
+          "required": true,
+          "placeholder": "Matricule-se"
+        }
+      },
+      {
+        "key": "view.featured.cta_btn_link",
+        "type": "input",
+        "templateOptions": {
+          "label": "Link do Botão",
+          "required": true,
+          "placeholder": "https://my-link.com"
+        }
+      },
+      {
+        "key": "view.featured.cta_btn_blank",
+        "type": "checkbox",
+        "templateOptions": {
+          "label": "Abrir link em nova guia",
+          "required": false
+        }
+      },
+      {
+        "template": "<label>Tópicos</label>"
+      },
+      {
+        "type": "repeatSection",
+        "key": "view.featured.topics",
+        "templateOptions": {
+          "btnText": "Adicionar Novo Tópico",
+          "fields": [
+            {
+              "key": "text",
+              "type": "input",
+              "templateOptions": {
+                "label": "Tópico",
+                "required": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "key": "view.featured.bottom_text",
+        "type": "input",
+        "templateOptions": {
+          "label": "Texto Final",
+          "required": false,
+          "placeholder": "Receba o certificado ao término do curso!"
+        }
+      }
     ]
   },
   {
     "name": "Footer",
-    "id": "7",
+    "id": "8",
     "settings": [
-
     ]
   }
 ]

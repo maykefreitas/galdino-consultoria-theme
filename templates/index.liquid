@@ -3,6 +3,10 @@
     {% include 'slider' %}
   </div>
 
+  <div class="home-featured">
+    {% include 'featured' %}
+  </div>
+
   {% if settings.view.home.enable_categories == true %}
     {% include 'home/categories', gateway: gateway, categories: categories %}
   {% else %}

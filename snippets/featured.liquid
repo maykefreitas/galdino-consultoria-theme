@@ -1,0 +1,88 @@
+<div class="featured">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img class="cover" src="{{ settings.view.featured.cover }}" alt="{{ settings.view.featured.title }}">
+      </div>
+      <div class="col-sm-6">
+        <div class="product-info">
+          <h2 class="title">{{ settings.view.featured.title }}</h2>
+          <h4 class="subtitle">{{ settings.view.featured.subtitle }}</h4>
+
+          <div class="row">
+            <div class="col-xs-6 col-sm-12 col-md-6">
+              <div class="price-box">
+                {% if settings.view.featured.old_price.size %}
+                  <div class="old-price">
+                    <p><span>De</span> <span class="number">R${{ settings.view.featured.old_price }}</span></p>
+                    <p>por apenas</p>
+                  </div>
+                {% endif %}
+
+                <div class="price">
+                  {% if settings.view.featured.price contains ',' %}
+                    {% assign price = settings.view.featured.price | split: ',' %}
+                    <span>R$</span> <span class="number">{{ price[0] }}</span><span
+                    class="decimal">,{{ price[1] }}</span>
+                  {% else %}
+                    <span>R$</span> <span class="number">{{ settings.view.featured.price }}</span>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-12 col-md-6">
+              <div class="installment-box">
+                <p class="times">ou em <span class="number">{{ settings.view.featured.installment_times }}</span><span
+                    class="times">x</span> de</p>
+                <p class="price">
+                  {% if settings.view.featured.installment_price contains ',' %}
+                    {% assign price = settings.view.featured.installment_price | split: ',' %}
+                    <span>R$</span> <span class="number">{{ price[0] }}</span><span
+                    class="decimal">,{{ price[1] }}</span>
+                  {% else %}
+                    <span>R$</span> <span class="number">{{ settings.view.featured.installment_price }}</span>
+                  {% endif %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="cta">{{ settings.view.featured.cta }}</h3>
+  </div>
+
+  <div class="topics">
+    <a href="{{ settings.view.featured.cta_btn_link }}"
+       class="btn btn-primary cta-btn"
+       {% if settings.view.featured.cta_btn_blank %}target="_blank" {% endif %}>{{ settings.view.featured.cta_btn_text }}</a>
+
+    {% assign list_size = settings.view.featured.topics.size | divided_by: 2 | minus: 1 %}
+    {% assign first_list_start = 0 %}
+    {% assign first_list_end = list_size %}
+    {% assign second_list_start = first_list_end | plus: 1 %}
+    {% assign second_list_end = settings.view.featured.topics.size | minus: 1 %}
+
+    <div class="container list-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <ul>
+            {% for i in  (first_list_start..first_list_end) %}
+              <li><i class="caret"></i>{{ settings.view.featured.topics[i].text }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <ul>
+            {% for i in  (second_list_start..second_list_end) %}
+              <li><i class="caret"></i>{{ settings.view.featured.topics[i].text }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="bottom-text">{{ settings.view.featured.bottom_text }}</h3>
+  </div>
+</div>

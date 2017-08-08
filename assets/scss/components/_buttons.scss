@@ -17,6 +17,7 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   vertical-align: middle;
   text-align: center;
+  text-transform: uppercase;
   white-space: nowrap;
   font-weight: $btn-font-weight;
   cursor: pointer;

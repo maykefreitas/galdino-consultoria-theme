@@ -1,0 +1,181 @@
+.featured {
+  margin-bottom: 65px;
+
+  .cover {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product-info {
+    margin: 0 auto;
+    max-width: 508px;
+  }
+
+  .title {
+    margin: 0 0 40px;
+    color: $brand-primary;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    margin: 0 0 40px;
+    color: $brand-primary;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .price-box {
+    position: relative;
+    color: $brand-primary;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: block;
+      margin-top: -64px;
+      width: 1px;
+      height: 104px;
+      background-color: darken($border-color-base, 20%);
+      content: '';
+    }
+
+    .old-price {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.2;
+
+      .number {
+        position: relative;
+        display: inline-block;
+
+        &:after {
+          position: absolute;
+          top: -5px;
+          left: 10px;
+          display: block;
+          width: 75px;
+          height: 32px;
+          content: '';
+        }
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .price {
+      white-space: nowrap;
+      font-size: 18px;
+
+      .number {
+        font-weight: bold;
+        font-size: 64px;
+      }
+
+      .decimal {
+        font-weight: bold;
+        font-size: 36px;
+      }
+    }
+  }
+
+  .installment-box {
+    color: $brand-primary;
+    font-size: 18px;
+
+    p {
+      margin: 0;
+      line-height: 1.16;
+    }
+
+    .times {
+      white-space: nowrap;
+      font-weight: 300;
+
+      .number {
+        font-size: 48px;
+      }
+
+      .times {
+        font-size: 42px;
+      }
+    }
+
+    .price {
+      white-space: nowrap;
+
+      .number {
+        font-weight: bold;
+        font-size: 64px;
+      }
+
+      .decimal {
+        font-weight: bold;
+        font-size: 36px;
+      }
+    }
+  }
+
+  .cta {
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+    color: $brand-primary;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .topics {
+    position: relative;
+    margin: 48px auto 0;
+    padding: 108px 0 60px;
+    width: 100%;
+    background-color: $brand-primary;
+
+    .cta-btn {
+      @include translate(-50%, 0);
+
+      position: absolute;
+      top: -23px;
+      left: 50%;
+      padding: 12px 28px;
+      font-size: 20px;
+    }
+
+    .list-container {
+      max-width: 890px;
+
+      ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin-bottom: 16px;
+          color: rgba($light, .9);
+          font-size: 18px;
+
+          .caret {
+            @include rotate(-90deg);
+
+            margin-right: 15px;
+            border-width: 6px;
+          }
+        }
+      }
+    }
+
+    .bottom-text {
+      margin-top: 58px;
+      margin-bottom: 0;
+      color: $light;
+      text-align: center;
+      font-weight: bold;
+      font-size: 28px;
+    }
+  }
+}
