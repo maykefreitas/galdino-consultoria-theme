@@ -1,0 +1,19 @@
+<div class="featured2">
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-6">
+        <img class="cover" src="{{ settings.view.featured2.cover }}" alt="{{ settings.view.featured2.title }}">
+      </div>
+      <div class="col col-sm-6">
+        <div class="text-center">
+          <h2 class="title">{{ settings.view.featured2.title }}</h2>
+          <h4 class="subtitle">{{ settings.view.featured2.subtitle }}</h4>
+
+          <a href="{{ settings.view.featured2.btn_link }}"
+             class="btn btn-secondary cta-btn"
+             {% if settings.view.featured2.btn_blank %}target="_blank" {% endif %}>{{ settings.view.featured2.btn_text }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

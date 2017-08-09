@@ -99,6 +99,14 @@
             }
           ],
           "bottom_text": "Receba o certificado ao término do curso!"
+        },
+        "featured2": {
+          "cover": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/computer.1502239552.png",
+          "title": "Ministramos treinamentos e cursos personalizados <b>inCompany</b>.",
+          "subtitle": "A Galdino Consultoria vai até você!",
+          "btn_text": "Saiba Mais",
+          "btn_link": "https://google.com",
+          "btn_blank": true
         }
       }
     }

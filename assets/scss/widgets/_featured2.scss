@@ -1,0 +1,42 @@
+.featured2 {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 150px;
+  padding-top: 28px;
+  background-color: #e2e2e2;
+
+  .col {
+    position: relative;
+  }
+
+  .cover {
+    @include translate(-50%, 0);
+
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .title {
+    margin: 0 0 20px;
+    color: $brand-primary;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    margin: 0 0 30px;
+    color: $brand-primary;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .cta-btn {
+    margin-bottom: -23px;
+    max-width: 168px;
+    width: 100%;
+  }
+}

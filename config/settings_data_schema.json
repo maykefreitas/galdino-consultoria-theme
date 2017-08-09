@@ -266,6 +266,65 @@
     ]
   },
   {
+    "name": "Destaque 2",
+    "id": "7",
+    "settings": [
+      {
+        "key": "view.featured2.cover",
+        "type": "input",
+        "templateOptions": {
+          "label": "Url da Imagem",
+          "required": true,
+          "placeholder": "https://example.com/my-image.jpg"
+        }
+      },
+      {
+        "key": "view.featured2.title",
+        "type": "input",
+        "templateOptions": {
+          "label": "Título",
+          "required": true,
+          "placeholder": "Ministramos treinamentos e cursos personalizados <b>inCompany</b>."
+        }
+      },
+      {
+        "key": "view.featured2.subtitle",
+        "type": "input",
+        "templateOptions": {
+          "label": "Subtítulo",
+          "required": true,
+          "placeholder": "A Galdino Consultoria vai até você!"
+        }
+      },
+      {
+        "key": "view.featured2.btn_text",
+        "type": "input",
+        "templateOptions": {
+          "label": "Texto do Botão",
+          "required": true,
+          "placeholder": "Saiba Mais"
+        }
+      },
+      {
+        "key": "view.featured2.btn_link",
+        "type": "input",
+        "templateOptions": {
+          "label": "Link do Botão",
+          "required": true,
+          "placeholder": "https://my-link.com"
+        }
+      },
+      {
+        "key": "view.featured2.btn_blank",
+        "type": "checkbox",
+        "templateOptions": {
+          "label": "Abrir link em nova guia",
+          "required": false
+        }
+      }
+    ]
+  },
+  {
     "name": "Footer",
     "id": "8",
     "settings": [
