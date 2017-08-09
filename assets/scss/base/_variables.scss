@@ -33,7 +33,7 @@ $light: #fff !default;
 //** Global text color on `<body>`.
 $text-color: #585858 !default;
 
-$border-color-base: #e6e6e6;
+$border-color-base: #b3b3b3;
 
 //** Global textual link color.
 $link-color: $brand-primary !default;
@@ -176,8 +176,8 @@ $btn-link-disabled-color: $gray-light !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius-base: 23px !default;
-$btn-border-radius-large: $border-radius-large !default;
-$btn-border-radius-small: $border-radius-small !default;
+$btn-border-radius-large: 27px !default;
+$btn-border-radius-small: 19px !default;
 
 //== Forms
 //

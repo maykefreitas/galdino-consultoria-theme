@@ -19,7 +19,7 @@
   position: relative;
   margin: 0 auto 50px;
   padding: 0;
-  border-color: darken($panel-default-border, 20%);
+  border-color: $border-color-base;
   background-color: $light;
 
   .logo {
