@@ -56,7 +56,9 @@
               "link": "",
               "blank": false
             }
-          ]
+          ],
+          "products_title": "Cursos Presenciais",
+          "products_category": "presenciais"
         },
         "featured": {
           "cover": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/galdino.1502212696.png",

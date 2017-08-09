@@ -47,6 +47,7 @@
     init: function () {
       app.bindGlobal();
       app.bindBlazy();
+      app.bindSlider();
       app.bindOpenOnLoad();
       app.bindMasks();
       app.bindTooltips();

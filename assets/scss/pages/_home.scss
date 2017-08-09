@@ -12,6 +12,18 @@
     max-width: 1440px;
   }
 
+  .home-products {
+    > .title {
+      margin: 0;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      color: $text-color;
+      text-align: center;
+      font-weight: 400;
+      font-size: 28px;
+    }
+  }
+
   .home-categories {
     .home-category {
       .product-list {

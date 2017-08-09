@@ -7,9 +7,15 @@
     {% include 'featured' %}
   </div>
 
+
   {% if settings.view.home.enable_categories == true %}
     {% include 'home/categories', gateway: gateway, categories: categories %}
   {% else %}
-    {% include 'product/list', products: products, gateway: gateway %}
+    <div class="home-products">
+      <h2 class="title">{{ settings.view.home.products_title }}</h2>
+
+      {% assign home_products = current_school | get_products_by_category_slug, settings.view.home.products_category %}
+      {% include 'product/list', products: home_products, gateway: gateway %}
+    </div>
   {% endif %}
 </div>

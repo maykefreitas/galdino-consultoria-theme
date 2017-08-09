@@ -62,6 +62,24 @@
             }
           ]
         }
+      },
+      {
+        "key": "view.home.products_title",
+        "type": "input",
+        "templateOptions": {
+          "label": "Título da Seção de Produtos",
+          "required": true,
+          "placeholder": "Cursos Presenciais"
+        }
+      },
+      {
+        "key": "view.home.products_category",
+        "type": "input",
+        "templateOptions": {
+          "label": "Slug da Categoria de Produtos",
+          "required": true,
+          "placeholder": "presenciais"
+        }
       }
     ]
   },
