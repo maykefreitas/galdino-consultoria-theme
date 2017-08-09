@@ -21,8 +21,8 @@
     }
   }
   &:hover {
-    border-color: lighten($border, 5%);
-    background-color: lighten($background, 5%);
+    border-color: lighten($border, 7%);
+    background-color: lighten($background, 7%);
     color: $color;
 
     @if $isOutline {
