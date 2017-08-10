@@ -1,84 +1,58 @@
 <footer class="page-footer">
   <div class="container">
-    <div class="info">
-      <div class="row">
-        <div class="col-sm-6 col-md-6">
-          <div class="info">
-
-            {% if settings.view.general.footer.logo %}
-              <div class="logo">
-                {% image, src: settings.view.general.footer.logo, class: 'img-responsive' %}
-              </div>
-            {% endif %}
-
-            {{ settings.view.general.footer.text }}
-          </div>
-
-          {% if settings.view.general.footer.address and current_school.address %}
-            <address>{{ current_school.address }}</address>
-          {% endif %}
-        </div>
-
-        <div class="col-md-5 col-md-offset-1">
-          <div class="contact-us">
-            <h2 class="title underlined">
-              {{ 'footer.contact_us' | t }}
-            </h2>
-
-            {% if settings.view.general.footer.phone and current_school.phone %}
-              <p>
-                <a href="tel:{{ current_school.phone }}">
-                  <i class="icon-phone"></i>
-                  <span>{{ current_school.phone }}</span>
-                </a>
-              </p>
-            {% endif %}
-
-            {% if settings.view.general.footer.email and current_school.email %}
-              <p>
-                <a href="mailto:{{ current_school.email }}">
-                  <i class="icon-envelope"></i>
-                  <span>{{ current_school.email }}</span>
-                </a>
-              </p>
-            {% endif %}
-
-            {% if settings.view.general.footer.site and current_school.site %}
-              <p>
-                <a href="{{ current_school.site }}">
-                  <i class="icon-globe"></i>
-                  <span>{{ current_school.site }}</span>
-                </a>
-              </p>
-            {% endif %}
-
-            <div class="company-info">
-              {% if settings.view.general.footer.razao_social and current_school.company_name %}
-                <p>
-                  <span>{{ current_school.company_name }}</span>
-                </p>
-              {% endif %}
-
-              {% if settings.view.general.footer.cnpj and current_school.cnpj %}
-                <p>
-                  <b>CNPJ: </b>
-                  <span>{{ current_school.cnpj }}</span>
-                </p>
-              {% endif %}
-            </div>
-          </div>
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="footer-logo">
+          {% assign logo = 'footer-logo.png' | asset_url %}
+          {% image, src: logo %}
         </div>
       </div>
-    </div>
-
-    <div class="copyright">
-      <div class="container">
-        {{ 'footer.plataform_by' | t }}
-        <a ng-click="fireAnalytics()" href="http://www.edools.com" class="brand scroller" target="blank"
-           title="Edools">
-          {% assign logo_edools_img = 'logo-edools.png' | asset_url %}
-          {% image, src: logo_edools_img, alt: 'Edools', width: 90 %}
-        </a>
+      <div class="col-lg-3">
+        <div class="footer-payment-methods">
+          <p class="title">Formas de Paganento</p>
+          {% assign moip_logo = 'footer-moip-logo.png' | asset_url %}
+          {% image, src: moip_logo %}
+          <p>Pague pelo Moip. Opções: boleto, débito online e cartão de crédito em até 12 vezes.</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="footer-social-networks">
+          <p class="title">Nossas Redes Sociais</p>
+          <ul>
+            {% if current_school.facebook.size > 1 %}
+              <li><a href="https://facebook.com/{{ current_school.facebook }}" target="_blank"
+                     class="img-icon img-icon-facebook"></a></li>
+            {% endif %}
+            {% if current_school.instagram.size > 1 %}
+              <li><a href="https://instagram.com/{{ current_school.instagram }}" target="_blank"
+                     class="img-icon img-icon-instagram"></a></li>
+            {% endif %}
+            {% if current_school.twitter.size > 1 %}
+              <li><a href="https://twitter.com/{{ current_school.twitter }}" target="_blank"
+                     class="img-icon img-icon-twitter"></a></li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="footer-links">
+          <ul>
+            <li><a href="/pages/quem-somos">Quem Somos</a></li>
+            <li><a href="/pages/clientes">Clientes</a></li>
+            <li><a href="/products">Cursos</a></li>
+            <li><a href="/pages/parceiros">Parceiros</a></li>
+            <li><a href="/pages/contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer-newsletter">
+          <p class="title">Inscreva-se e receba notícias e novidades!</p>
+          <form action="#">
+            <input type="text" class="form-control" placeholder="Email">
+            <button class="btn btn-outline-secondary btn-sm">Cadastrar</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>

@@ -126,6 +126,10 @@ a.btn {
   @include button-variant($brand-primary, transparent, $brand-primary, true);
 }
 
+.btn-outline-secondary {
+  @include button-variant($btn-secondary-bg, transparent, $btn-secondary-bg, true);
+}
+
 .btn-outline-success {
   @include button-variant($brand-success, transparent, $brand-success, true);
 }
