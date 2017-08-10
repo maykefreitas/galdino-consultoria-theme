@@ -1,10 +1,6 @@
 .product-page {
-  .navbar {
-    border-bottom: none;
-  }
-
   .product-header {
-    margin-bottom: $padding-large-vertical * 4;
+    margin-bottom: $padding-large-vertical * 8;
     padding: $padding-large-vertical * 12 0;
     padding-bottom: $padding-large-vertical * 8;
 
@@ -30,81 +26,81 @@
         font-size: 34px;
         line-height: 1.3;
       }
-    }
-  }
 
-  .enroll {
-    .price {
-      margin-bottom: $padding-large-vertical;
-      color: $brand-primary;
-      font-weight: 300;
-      font-size: 22px;
+      .enroll {
+        .price {
+          margin-bottom: $padding-large-vertical;
+          color: $brand-primary;
+          font-weight: 300;
+          font-size: 22px;
 
-      p {
-        margin: 0;
-      }
+          p {
+            margin: 0;
+          }
 
-      .number {
-        white-space: nowrap;
-      }
+          .number {
+            white-space: nowrap;
+          }
 
-      .installments {
-        line-height: 1.2;
+          .installments {
+            line-height: 1.2;
 
-        .times {
-          font-weight: 600;
-          font-size: 36px;
-        }
-
-        .value {
-          font-weight: 600;
-          font-size: 78px;
-        }
-
-        .decimals {
-          font-weight: 600;
-          font-size: 48px;
-        }
-      }
-
-      .full-price {
-        font-size: 18px;
-
-        .base-number {
-          position: relative;
-          display: inline-block;
-
-          &:after {
-            @include breakpoint(md) {
-              top: -2px;
-              left: 15px;
+            .times {
+              font-weight: 600;
+              font-size: 36px;
             }
 
-            position: absolute;
-            top: -8px;
-            left: 0;
-            display: block;
-            width: 75px;
-            height: 32px;
-            content: '';
+            .value {
+              font-weight: 600;
+              font-size: 78px;
+            }
+
+            .decimals {
+              font-weight: 600;
+              font-size: 48px;
+            }
+          }
+
+          .full-price {
+            font-size: 18px;
+
+            .base-number {
+              position: relative;
+              display: inline-block;
+
+              &:after {
+                @include breakpoint(md) {
+                  top: -2px;
+                  left: 15px;
+                }
+
+                position: absolute;
+                top: -8px;
+                left: 0;
+                display: block;
+                width: 75px;
+                height: 32px;
+                content: '';
+              }
+            }
+
+            .final-number {
+              font-weight: 600;
+              font-size: 32px;
+            }
           }
         }
 
-        .final-number {
-          font-weight: 600;
-          font-size: 32px;
+        .btn-group {
+          margin-top: 30px;
+
+          .btn {
+            padding-right: 30px;
+            padding-left: 30px;
+            border-radius: 25px;
+            font-size: 20px;
+          }
         }
-      }
-    }
-
-    .btn-group {
-      margin-top: 30px;
-
-      .btn {
-        padding-right: 30px;
-        padding-left: 30px;
-        border-radius: 25px;
-        font-size: 20px;
       }
     }
   }
@@ -115,18 +111,23 @@
         margin-bottom: $padding-large-vertical * 4;
         padding: 0 $padding-large-horizontal;
 
-        .avatar {
-          margin-top: 0;
-          margin-bottom: 0;
-        }
-
         .title {
           margin-top: 5px;
           margin-bottom: 5px;
+          color: $text-color;
+          font-weight: 600;
+          font-size: 14px;
         }
 
         .description {
           margin-top: $padding-large-vertical * 2;
+        }
+
+        .readmore-link {
+          padding: 25px 0;
+          text-align: center;
+          font-weight: 600;
+          font-size: 14px;
         }
       }
     }
@@ -143,11 +144,58 @@
     }
   }
 
-  .jumbotron {
-    background-color: $light;
+  .product-payment-methods {
+    .panel-body {
+      padding: 40px;
+
+      p {
+        font-weight: 300;
+        font-size: 14px;
+      }
+
+      .payment-logos {
+        margin-top: 50px;
+        line-height: 1;
+
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .product-cta {
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
 
     h2 {
-      margin: 0;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      max-width: 422px;
+      color: $brand-primary;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 1.8;
+    }
+
+    .btn {
+      padding-right: 30px;
+      padding-left: 30px;
+      border-radius: 25px;
+      font-size: 20px;
+    }
+  }
+
+  .col-right {
+    .panel {
+      .panel-heading {
+        padding-right: 30px;
+        padding-left: 30px;
+        background-color: lighten($border-color-base, 15%);
+        color: $brand-primary;
+        font-size: 26px;
+      }
     }
   }
 }

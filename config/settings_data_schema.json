@@ -128,6 +128,15 @@
     "name": "Produto",
     "id": "6",
     "settings": [
+      {
+        "key": "view.product.cta_title",
+        "type": "input",
+        "templateOptions": {
+          "label": "Texto de Chamada",
+          "required": true,
+          "placeholder": "Últimas vagas! Faça já a inscrição e ganhe desconto!"
+        }
+      }
     ]
   },
   {

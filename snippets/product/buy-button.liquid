@@ -1,0 +1,26 @@
+{% assign first_option = product.payment_options[0] %}
+
+<div class="btn-group">
+  {% if product.payment_options.size > 1 %}
+    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      {{ 'product.buy' | t }}
+    </a>
+
+    <ul class="dropdown-menu">
+      {% for option in product.payment_options %}
+        <li>
+          <a id="add-to-cart-product-{{ product.id }}-{{ option.id }}"
+             href="{{ product | add_to_cart_path: option }}">
+            {{ option.price | money_option_presentation_with_taxes: option.kind, option.period, gateway }}
+
+            {% if option.trials > 0 %}
+              <span>{{ 'product.trial' | t: count: option.trials }}</span>
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    {{ 'product.buy' | t | add_to_cart_link: product, first_option, 'btn btn-primary' }}
+  {% endif %}
+</div>

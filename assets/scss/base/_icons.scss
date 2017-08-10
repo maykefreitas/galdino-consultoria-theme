@@ -39,3 +39,35 @@
   height: 42px;
   background-position: -210px -0;
 }
+
+.payment-logo {
+  display: inline-block; overflow: hidden; background-image: url(payment-methods.png);background-repeat: no-repeat;
+}
+
+.payment-logo-visa {
+  width: 42px; height: 26px; background-position: -0 -0;
+}
+.payment-logo-master {
+  width: 42px; height: 26px; background-position: -42px -0;
+}
+.payment-logo-hiper {
+  width: 42px; height: 26px; background-position: -84px -0;
+}
+.payment-logo-elo {
+  width: 42px; height: 26px; background-position: -126px -0;
+}
+.payment-logo-card1 {
+  width: 42px; height: 26px; background-position: -168px -0;
+}
+.payment-logo-amex {
+  width: 42px; height: 26px; background-position: -210px -0;
+}
+.payment-logo-itau {
+  width: 42px; height: 26px; background-position: -252px -0;
+}
+.payment-logo-santander {
+  width: 42px; height: 26px; background-position: -294px -0;
+}
+.payment-logo-bb {
+  width: 42px; height: 26px; background-position: -336px -0;
+}

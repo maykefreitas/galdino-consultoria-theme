@@ -6,7 +6,7 @@
           <div class="image">
             {% if product.video_cover %}
               {% media_player media: product.video_cover %}
-            {% elsif product.logo %}
+              {% elsif product.logo %}
               {% image, src: product.logo, alt: product.title %}
             {% else %}
               {% assign placeholder = 'missing-product-logo.png' | asset_url %}
@@ -16,43 +16,54 @@
         </div>
         <div class="col-md-6">
           <div class="product-info">
-            {% include 'product/buy' %}
+            {% include 'product/enroll' %}
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="product-body">
-    <div class="container page-container">
-      <div class="row">
-        <div class="col-md-8">
+  <div class="container page-container">
+    <div class="row">
+      <div class="col-md-6 col-left">
+        <div class="page-content">
           {% if product.description %}
-            <article class="product-description">
+            <div class="product-description text">
               {{ product.description }}
-            </article>
-          {% endif %}
-
-          <div class="product-content">
-            <h3 class="title">{{ 'product.resource.course' | t }}</h3>
-
-            <div class="landing-modules">
-              {% include 'product/content-course', lesson_actions: false %}
-              {% include 'product/content-path' %}
             </div>
-          </div>
-
-          <div class="text-center jumbotron">
-            <h2 class="title">{{ settings.style.product.footer_text }}</h2>
-            <br>
-            {% include 'product/buy' %}
-          </div>
-        </div>
-        <div class="col-md-4">
-          {% include 'product/teachers' %}
-          {% include 'product/product-topics' %}
+          {% endif %}
         </div>
       </div>
+      <div class="col-md-6 col-right">
+        {% include 'product/teachers' %}
+        {% include 'product/product-topics' %}
+
+        <div class="panel panel-default product-payment-methods">
+          <div class="panel-heading">Formas de Pagamento</div>
+          <div class="panel-body">
+            <p>Cartão de Crédito</p>
+            <p>Débito Online</p>
+            <p>Boleto Bancário</p>
+
+            <p class="payment-logos">
+              <span class="payment-logo payment-logo-visa"></span>
+              <span class="payment-logo payment-logo-master"></span>
+              <span class="payment-logo payment-logo-hiper"></span>
+              <span class="payment-logo payment-logo-elo"></span>
+              <span class="payment-logo payment-logo-card1"></span>
+              <span class="payment-logo payment-logo-amex"></span>
+              <span class="payment-logo payment-logo-itau"></span>
+              <span class="payment-logo payment-logo-santander"></span>
+              <span class="payment-logo payment-logo-bb"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-cta">
+      <h2>{{ settings.view.product.cta_title }}</h2>
+      {% include 'product/buy-button', product: product %}
     </div>
   </div>
 </div>

@@ -60,6 +60,9 @@
           "products_title": "Cursos Presenciais",
           "products_category": "presenciais"
         },
+        "product": {
+          "cta_title": "Últimas vagas! Faça já a inscrição e ganhe desconto!"
+        },
         "featured": {
           "cover": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/galdino.1502212696.png",
           "title": "Curso: Como obter <b>sucesso</b> em entrevistas",

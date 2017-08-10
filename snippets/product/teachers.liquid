@@ -10,23 +10,14 @@
         {% for teacher in product.class_teachers %}
           <div class="teacher-item">
             <div class="row">
-              <div class="col-xs-2">
-                <div class="avatar">
-                  {% if teacher.photo_url %}
-                    {% image, src: teacher.photo_url, alt: teacher.full_name %}
-                  {% else %}
-                    {% assign placeholder = 'default-placeholder.png' | asset_url %}
-                    {% image, src: placeholder, alt: product.title %}
-                  {% endif %}
-                </div>
-              </div>
-
-              <div class="col-xs-10">
+              <div class="col-xs-12">
                 <h4 class="title">{{ teacher.full_name }}</h4>
               </div>
 
               <div class="col-xs-12">
-                <div class="description" role="readmore" data-collapsed-height="100">{{ teacher.about }}</div>
+                <div class="description page-content" role="readmore" data-collapsed-height="100">
+                  <p>{{ teacher.about }}</p>
+                </div>
               </div>
             </div>
           </div>
