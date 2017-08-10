@@ -107,6 +107,10 @@
           "btn_text": "Saiba Mais",
           "btn_link": "https://google.com",
           "btn_blank": true
+        },
+        "quem_somos": {
+          "cover": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/contact.1502343182.png",
+          "cover_mobile": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/contact-mobile.1502343181.png"
         }
       }
     }

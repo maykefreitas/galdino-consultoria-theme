@@ -325,8 +325,23 @@
     ]
   },
   {
-    "name": "Footer",
+    "name": "Quem Somos",
     "id": "8",
+    "settings": [
+      {
+        "key": "view.quem_somos.cover",
+        "type": "input",
+        "templateOptions": {
+          "label": "Url da Imagem",
+          "required": true,
+          "placeholder": "https://example.com/my-image.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Footer",
+    "id": "9",
     "settings": [
     ]
   }

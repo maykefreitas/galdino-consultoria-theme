@@ -34,6 +34,55 @@
       padding-top: 0;
     }
   }
+
+  .page-cover {
+    @include breakpoint(sm) {
+      margin: 0 auto 50px;
+    }
+
+    margin: 0 auto 20px;
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .page-content {
+    h1,
+    h2,
+    h3 {
+      @include breakpoint(sm) {
+        text-align: left;
+      }
+
+      color: $text-color;
+      text-align: center;
+    }
+
+    h2 {
+      @include breakpoint(sm) {
+        font-size: $font-size-h2;
+      }
+
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .text {
+      p {
+        @include breakpoint(sm) {
+          text-align: left;
+        }
+
+        margin-bottom: 38px;
+        text-align: justify;
+      }
+    }
+  }
 }
 
 [data-is-bullet-footer] {
