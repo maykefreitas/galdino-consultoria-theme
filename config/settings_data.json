@@ -114,7 +114,64 @@
         "quem_somos": {
           "cover": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/contact.1502343182.png",
           "cover_mobile": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/contact-mobile.1502343181.png"
-        }
+        },
+        "partners": [
+          {
+            "image": "https://unsplash.it/140/64?image=0",
+            "name": "Parceiro 1",
+            "url": "https://google.com"
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=2",
+            "name": "Parceiro 2",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=3",
+            "name": "Parceiro 3",
+            "url": "https://google.com"
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=4",
+            "name": "Parceiro 4",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=5",
+            "name": "Parceiro 5",
+            "url": "https://google.com"
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=6",
+            "name": "Parceiro 6",
+            "url": "https://google.com"
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=7",
+            "name": "Parceiro 7",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=8",
+            "name": "Parceiro 8",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=9",
+            "name": "Parceiro 9",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=10",
+            "name": "Parceiro 10",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/140/64?image=11",
+            "name": "Parceiro 11",
+            "url": ""
+          }
+        ]
       }
     }
   }

@@ -349,8 +349,47 @@
     ]
   },
   {
-    "name": "Footer",
+    "name": "Parceiros",
     "id": "9",
+    "settings": [
+      {
+        "type": "repeatSection",
+        "key": "view.partners",
+        "templateOptions": {
+          "btnText": "Adicionar Novo Parceiro",
+          "fields": [
+            {
+              "key": "image",
+              "type": "input",
+              "templateOptions": {
+                "label": "Imagem",
+                "required": true
+              }
+            },
+            {
+              "key": "name",
+              "type": "input",
+              "templateOptions": {
+                "label": "Nome",
+                "required": true
+              }
+            },
+            {
+              "key": "url",
+              "type": "input",
+              "templateOptions": {
+                "label": "Url",
+                "required": false
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Footer",
+    "id": "10",
     "settings": [
     ]
   }

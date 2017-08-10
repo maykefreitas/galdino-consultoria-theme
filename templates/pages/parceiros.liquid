@@ -1,0 +1,23 @@
+<div class="page parceiros-page">
+  <div class="container page-container">
+    <h2 class="title">{{ page.title }}</h2>
+
+    <div class="content">
+      <div class="partners-slider">
+        <div class="owl-carousel owl-theme">
+          {% for partner in settings.view.partners %}
+            <div class="slide">
+              {% if partner.url.size > 1 %}
+                <a href="{{ partner.url }}">
+                  <img src="{{ partner.image }}" alt="{{ partner.name }}">
+                </a>
+              {% else %}
+                <img src="{{ partner.image }}" alt="{{ partner.name }}">
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

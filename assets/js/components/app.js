@@ -62,6 +62,7 @@
       app.bindDatepicker();
       app.bindFixOnScroll();
       app.ckeditor.bindCkeditor();
+      app.bindPartners();
       app.bindCheckout();
       app.lessonList.init();
       app.chat.init();

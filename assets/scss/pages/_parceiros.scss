@@ -1,0 +1,13 @@
+.parceiros-page {
+  .title {
+    @include breakpoint(sm) {
+      padding: 50px 0;
+      font-size: $font-size-h2 - 4;
+    }
+
+    color: $text-color;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
