@@ -1,9 +1,14 @@
 .page {
-  min-height: 640px;
+  @include breakpoint(md) {
+    min-height: 640px;
+  }
+
   background-color: $body-bg;
 
   .page-container {
-    padding-bottom: $padding-large-vertical * 8;
+    @include breakpoint(md) {
+      padding-bottom: $padding-large-vertical * 8;
+    }
   }
 
   .page-header {

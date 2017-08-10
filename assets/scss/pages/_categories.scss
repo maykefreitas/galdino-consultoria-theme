@@ -1,8 +1,58 @@
 .categories-page {
+  @include breakpoint(md) {
+    padding-bottom: 80px;
+  }
+
+  padding-bottom: 25px;
+
   .categories-slider {
     margin: 0 auto;
     max-width: 1440px;
     width: 100%;
+
+    .owl-carousel {
+      @include breakpoint(md) {
+        margin-bottom: 70px;
+      }
+
+      margin-bottom: 25px;
+    }
+  }
+
+  .categories {
+    @include breakpoint(md) {
+      margin-bottom: 80px;
+    }
+
+    margin-bottom: 40px;
+
+    .badge {
+      $bg: #d1e1ee;
+      @include breakpoint(md) {
+        margin-right: 15px;
+        padding: 5.5px 15px;
+        border-radius: 17px;
+        font-size: 18px;
+      }
+
+      display: inline-flex;
+      margin-top: 7.5px;
+      margin-right: 5px;
+      margin-bottom: 7.5px;
+      padding: 4px 10px;
+      border-radius: 13px;
+      background-color: $bg;
+      color: $text-color;
+      font-weight: 400;
+      font-size: 14px;
+      transition: background-color .2s ease;
+
+      justify-content: center;
+
+      &:hover {
+        background-color: lighten($bg, 5%);
+      }
+    }
   }
 
   .category-list {

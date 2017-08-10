@@ -3,17 +3,14 @@
     text-align: left;
   }
 
+  padding-top: $padding-large-vertical * 6;
+  padding-bottom: $padding-large-vertical * 6;
+  border-top: 1px solid $border-color-base;
   background-color: $body-bg;
   color: $text-color;
   text-align: center;
   font-weight: 300;
   font-size: 14px;
-
-  > .container {
-    padding-top: $padding-large-vertical * 6;
-    padding-bottom: $padding-large-vertical * 6;
-    border-top: 1px solid $border-color-base;
-  }
 
   .footer-logo {
     @include breakpoint(md) {
