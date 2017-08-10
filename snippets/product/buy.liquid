@@ -1,28 +1,39 @@
 <div class="enroll">
+  <h2 class="title">{{ product.title }}</h2>
+
   {% assign first_option = product.payment_options[0] %}
   {% if first_option %}
     {% capture product_price %}
-      {{ first_option.price | money_option_presentation_with_taxes: first_option.kind,
-        first_option.period, gateway }}
+    {{ first_option.price | money_option_presentation_with_taxes: first_option.kind, first_option.period, gateway }}
+    {% endcapture %}
+
+    {% capture product_full_price %}
+    {{ first_option.price | money }}
     {% endcapture %}
 
     {% capture product_base_price %}
-      {{ first_option.base_price | money_option_presentation_with_taxes: first_option.kind,
-        first_option.period, gateway }}
+    {{ first_option.base_price | money }}
     {% endcapture %}
 
     <div class="price">
-      {% if first_option.promotional == true %}
-        <p class="base-price">
-          <strike>{{ product_base_price }}</strike>
-        </p>
-      {% endif %}
-
       {% if first_option.kind == 'subscription' %}
         {{ first_option.price | money_option_presentation: first_option.kind, first_option.period, 'full', 1 }}
       {% else %}
-        {{ product_price }}
+        <div class="installments">
+          <p>por apenas <span
+              class="number">{{ product_price | prepend: '<span class="times">' | replace: 'x ', 'x</span> ' | replace: 'R$', '<span class="money-symbol">R$</span><span class="value">' | replace: ',', '</span><span class="decimals">,' | append: '</span>' }}</span>
+          </p>
+        </div>
       {% endif %}
+
+      <p class="full-price">
+        <span>ou</span> {% if first_option.promotional == true %}<span class="base-price">
+          de <span class="number base-number">{{ product_base_price| replace: 'R$', '<span class="money-symbol">R$</span>' }}</span>
+          </span>{% endif %}
+        por <span
+          class="number final-number">{{ product_full_price | replace: 'R$', '<span class="money-symbol">R$</span><span class="value">' | replace: ',', '</span><span class="decimals">,' | append: '</span>' }}</span>
+        à vista
+      </p>
 
       {% if first_option.trials > 0 %}
         <div>{{ 'product.trial' | t: count: first_option.trials }}</div>
@@ -31,14 +42,15 @@
 
     <div class="btn-group">
       {% if product.payment_options.size > 1 %}
-        <a class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
           {{ 'product.buy' | t }}
         </a>
 
         <ul class="dropdown-menu">
           {% for option in product.payment_options %}
             <li>
-              <a id="add-to-cart-product-{{ product.id }}-{{ option.id }}" href="{{ product | add_to_cart_path: option }}">
+              <a id="add-to-cart-product-{{ product.id }}-{{ option.id }}"
+                 href="{{ product | add_to_cart_path: option }}">
                 {{ option.price | money_option_presentation_with_taxes: option.kind, option.period, gateway }}
 
                 {% if option.trials > 0 %}
@@ -49,7 +61,7 @@
           {% endfor %}
         </ul>
       {% else %}
-        {{ 'product.buy' | t | add_to_cart_link: product, first_option, 'btn btn-primary btn-lg' }}
+        {{ 'product.buy' | t | add_to_cart_link: product, first_option, 'btn btn-primary' }}
       {% endif %}
     </div>
   {% endif %}

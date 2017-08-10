@@ -1,11 +1,8 @@
 <div class="product-page page">
   <header class="product-header page-header">
     <div class="container">
-      <h2 class="title">{{ product.title }}</h2>
-      <h4 class="subtitle">{{ product.subtitle }}</h4>
-
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6">
           <div class="image">
             {% if product.video_cover %}
               {% media_player media: product.video_cover %}
@@ -17,7 +14,7 @@
             {% endif %}
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="product-info">
             {% include 'product/buy' %}
           </div>
