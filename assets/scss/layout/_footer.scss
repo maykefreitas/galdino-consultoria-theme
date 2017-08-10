@@ -1,21 +1,47 @@
 .page-footer {
+  @include breakpoint(md) {
+    text-align: left;
+  }
+
   background-color: $body-bg;
   color: $text-color;
+  text-align: center;
   font-weight: 300;
   font-size: 14px;
 
   > .container {
-    padding: $padding-large-vertical * 6 0;
+    padding-top: $padding-large-vertical * 6;
+    padding-bottom: $padding-large-vertical * 6;
     border-top: 1px solid $border-color-base;
   }
 
+  .footer-logo {
+    @include breakpoint(md) {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 50px;
+  }
+
   .footer-payment-methods {
+    @include breakpoint(md) {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 50px;
+
     .title {
       margin-bottom: 0;
     }
   }
 
   .footer-social-networks {
+    @include breakpoint(md) {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 50px;
+
     ul {
       padding: 0;
       list-style: none;
@@ -27,6 +53,12 @@
   }
 
   .footer-links {
+    @include breakpoint(md) {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 50px;
+
     ul {
       padding: 0;
       list-style: none;

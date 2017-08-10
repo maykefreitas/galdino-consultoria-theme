@@ -9,40 +9,42 @@
           <h2 class="title">{{ settings.view.featured.title }}</h2>
           <h4 class="subtitle">{{ settings.view.featured.subtitle }}</h4>
 
-          <div class="row">
-            <div class="col-xs-6 col-sm-12 col-md-6">
-              <div class="price-box">
-                {% if settings.view.featured.old_price.size %}
-                  <div class="old-price">
-                    <p><span>De</span> <span class="number">R${{ settings.view.featured.old_price }}</span></p>
-                    <p>por apenas</p>
-                  </div>
-                {% endif %}
-
-                <div class="price">
-                  {% if settings.view.featured.price contains ',' %}
-                    {% assign price = settings.view.featured.price | split: ',' %}
-                    <span>R$</span> <span class="number">{{ price[0] }}</span><span
-                    class="decimal">,{{ price[1] }}</span>
-                  {% else %}
-                    <span>R$</span> <span class="number">{{ settings.view.featured.price }}</span>
+          <div class="prices">
+            <div class="row">
+              <div class="col col-xs-6">
+                <div class="price-box">
+                  {% if settings.view.featured.old_price.size %}
+                    <div class="old-price">
+                      <p><span>De</span> <span class="number">R${{ settings.view.featured.old_price }}</span></p>
+                      <p>por apenas</p>
+                    </div>
                   {% endif %}
+
+                  <div class="price">
+                    {% if settings.view.featured.price contains ',' %}
+                      {% assign price = settings.view.featured.price | split: ',' %}
+                      <span>R$</span> <span class="number">{{ price[0] }}</span><span
+                      class="decimal">,{{ price[1] }}</span>
+                    {% else %}
+                      <span>R$</span> <span class="number">{{ settings.view.featured.price }}</span>
+                    {% endif %}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-xs-6 col-sm-12 col-md-6">
-              <div class="installment-box">
-                <p class="times">ou em <span class="number">{{ settings.view.featured.installment_times }}</span><span
-                    class="times">x</span> de</p>
-                <p class="price">
-                  {% if settings.view.featured.installment_price contains ',' %}
-                    {% assign price = settings.view.featured.installment_price | split: ',' %}
-                    <span>R$</span> <span class="number">{{ price[0] }}</span><span
-                    class="decimal">,{{ price[1] }}</span>
-                  {% else %}
-                    <span>R$</span> <span class="number">{{ settings.view.featured.installment_price }}</span>
-                  {% endif %}
-                </p>
+              <div class="col col-xs-6">
+                <div class="installment-box">
+                  <p class="times">ou em <span class="number">{{ settings.view.featured.installment_times }}</span><span
+                      class="times">x</span> de</p>
+                  <p class="price">
+                    {% if settings.view.featured.installment_price contains ',' %}
+                      {% assign price = settings.view.featured.installment_price | split: ',' %}
+                      <span>R$</span> <span class="number">{{ price[0] }}</span><span
+                      class="decimal">,{{ price[1] }}</span>
+                    {% else %}
+                      <span>R$</span> <span class="number">{{ settings.view.featured.installment_price }}</span>
+                    {% endif %}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

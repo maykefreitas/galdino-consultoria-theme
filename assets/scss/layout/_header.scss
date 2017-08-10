@@ -3,9 +3,13 @@ html.turbolinks-progress-bar::before {
 }
 
 header.navbar {
+  @include breakpoint($grid-float-breakpoint) {
+    min-height: 120px;
+  }
   @include box-shadow(none);
 
   margin: 0;
+  min-height: 62px;
   border: none;
   background-color: $light;
 
@@ -14,24 +18,50 @@ header.navbar {
   }
 
   .navbar-brand {
+    @include breakpoint($grid-float-breakpoint) {
+      padding: 32px 15px;
+      height: 120px;
+    }
+
     display: block;
-    padding: 32px 15px;
+    padding: 10px 0;
+    height: 62px;
     color: $text-color !important;
     text-transform: uppercase !important;
     opacity: 1;
 
-    &.navbar-brand-img {
-      padding: 15px 0;
-
-      img {
+    img {
+      @include breakpoint($grid-float-breakpoint) {
         width: auto;
-        height: 100%;
-        vertical-align: middle;
+        height: auto;
       }
+
+      width: auto;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .navbar-toggle {
+    margin: 0;
+    background-color: transparent;
+    transition: opacity .2s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+      opacity: .6;
     }
   }
 
   .navbar-nav {
+    @include breakpoint($grid-float-breakpoint) {
+      text-align: left;
+    }
+
+    text-align: center;
+
     a {
       font-weight: normal;
       font-size: 18px;
@@ -41,17 +71,32 @@ header.navbar {
       }
     }
 
-    li {
-      position: relative;
+    > li {
+      @include breakpoint($grid-float-breakpoint) {
+        border-bottom: 0;
+      }
 
-      a {
+      position: relative;
+      border-bottom: 1px solid $border-color-base;
+
+      > a {
         padding-right: 17px !important;
         padding-left: 17px !important;
       }
 
       &.list-item-icon {
+        @include breakpoint($grid-float-breakpoint) {
+          &:last-child {
+            a {
+              padding-right: 0 !important;
+            }
+          }
+        }
+
         a {
-          padding: 39px 8px !important;
+          @include breakpoint($grid-float-breakpoint) {
+            padding: 39px 8px !important;
+          }
 
           &:hover {
             opacity: .6;
@@ -59,12 +104,6 @@ header.navbar {
 
           i {
             margin: 0;
-          }
-        }
-
-        &:last-child {
-          a {
-            padding-right: 0 !important;
           }
         }
       }
@@ -76,27 +115,39 @@ header.navbar {
       }
 
       > .submenu {
-        position: absolute;
-        top: 120%;
-        left: 0;
-        visibility: hidden;
-        margin: -5px 0 0;
+        @include breakpoint($grid-float-breakpoint) {
+          position: absolute;
+          top: 120%;
+          left: 0;
+          visibility: hidden;
+          margin: -5px 0 0;
+          background-color: $light;
+          box-shadow: 0 6px 30px -4px rgba(0, 0, 0, .4);
+          opacity: 0;
+          transition: .25s ease-in-out;
+          pointer-events: none;
+        }
+
+        margin-bottom: 20px;
         padding: 0;
-        background-color: $light;
-        box-shadow: 0 6px 30px -4px rgba(0, 0, 0, .4);
         list-style: none;
-        opacity: 0;
-        transition: .25s ease-in-out;
-        pointer-events: none;
 
         > li {
-          border-bottom: 1px solid $border-color-base;
+          @include breakpoint($grid-float-breakpoint) {
+            border-bottom: 1px solid $border-color-base;
 
-          &:last-child {
-            border-bottom: none;
+            &:last-child {
+              border-bottom: none;
+            }
           }
 
           > a {
+            @include breakpoint($grid-float-breakpoint) {
+              &:hover {
+                background-color: $brand-secondary;
+              }
+            }
+
             display: block;
             padding: 10px 8px;
             min-width: 190px;
@@ -104,7 +155,6 @@ header.navbar {
             text-decoration: none;
 
             &:hover {
-              background-color: $brand-secondary;
               font-weight: bold;
             }
           }
@@ -137,13 +187,18 @@ header.navbar {
       @include breakpoint($grid-float-breakpoint) {
         display: block;
         padding: 0 !important;
+
+        .avatar {
+          margin-top: 38px;
+          margin-bottom: 38px;
+        }
       }
 
       display: none;
       padding: $padding-large-vertical * 2 !important;
       padding-right: 15px !important;
       padding-left: 35px !important;
-      line-height: 80px;
+      line-height: 120px;
 
       .avatar {
         float: right;
@@ -162,6 +217,7 @@ header.navbar {
       @include breakpoint($grid-float-breakpoint-max) {
         display: block;
         visibility: hidden;
+        max-width: 220px;
         border-radius: $border-radius-base + 2;
         opacity: 0;
         pointer-events: none;
@@ -185,10 +241,13 @@ header.navbar {
 
       li {
         a {
-          padding-top: 13px;
-          padding-bottom: 13px;
+          padding: 13px 20px;
           font-weight: normal;
           line-height: 1;
+
+          &:hover {
+            font-weight: 600;
+          }
 
           i {
             margin-right: 5px;

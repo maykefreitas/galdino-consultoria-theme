@@ -4,10 +4,7 @@
   <div class="container">
     <div class="navbar-header row">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-menu">
-        {{ 'navbar.open_navigation' | t }}
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <i class="img-icon img-icon-menu"></i>
       </button>
       <a class="navbar-brand {% if settings.view.general.navbar.logo.size > 0 %}navbar-brand-img{% endif %}" href="/">
         {% assign logo = 'logo.png' | asset_url %}
@@ -17,13 +14,12 @@
 
     <div class="collapse navbar-collapse" id="header-menu">
       <ul class="nav navbar-nav navbar-right">
-
-        {% if current_user == nil or current_user.type == 'Student' %}
+        {% if current_user == nil %}
           <li>
             <a href="/pages/institucional">Institucional</a>
           </li>
           <li>
-            <a href="#">
+            <a href="/products">
               <span>Cursos <i class="caret"></i></span>
             </a>
             <ul class="submenu">
@@ -44,6 +40,9 @@
           <li>
             <a href="/pages/contato">Contato</a>
           </li>
+        {% endif %}
+
+        {% if current_user == nil or current_user.type == 'Student' %}
           <li class="list-item-icon">
             <a href="/cart">
               <i class="img-icon img-icon-cart"></i>

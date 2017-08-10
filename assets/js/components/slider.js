@@ -2,7 +2,9 @@
   'use strict';
 
   app.bindSlider = function () {
-    $('.slider .owl-carousel').owlCarousel({
+    const $slider = $('.slider');
+
+    $('.owl-carousel', $slider).owlCarousel({
       loop: true,
       nav: true,
       dots: true,

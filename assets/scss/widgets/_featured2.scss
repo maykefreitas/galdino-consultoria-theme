@@ -1,6 +1,10 @@
 .featured2 {
+  @include breakpoint(md) {
+    margin-top: 60px;
+  }
+
   position: relative;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 150px;
   padding-top: 28px;
   background-color: #e2e2e2;
@@ -10,31 +14,49 @@
   }
 
   .cover {
+    @include breakpoint(sm) {
+      top: -65px;
+      max-width: 100%;
+    }
     @include translate(-50%, 0);
 
     position: absolute;
-    top: -65px;
+    top: 100px;
     left: 50%;
-    max-width: 100%;
+    max-width: 280px;
     height: auto;
   }
 
   .title {
+    @include breakpoint(sm) {
+      font-size: 28px;
+    }
+
     margin: 0 0 20px;
     color: $brand-primary;
-    font-size: 28px;
+    font-size: 16px;
     line-height: 1.2;
   }
 
   .subtitle {
-    margin: 0 0 30px;
+    @include breakpoint(md) {
+      margin: 0 0 30px;
+      font-size: 20px;
+    }
+
+    margin: 0 0 80px;
     color: $brand-primary;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.2;
   }
 
   .cta-btn {
+    @include breakpoint(sm) {
+      display: inline-block;
+    }
+
+    display: none;
     margin-bottom: -23px;
     max-width: 168px;
     width: 100%;

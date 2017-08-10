@@ -14,13 +14,27 @@
 
   .home-products {
     > .title {
+      @include breakpoint(md) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 28px;
+      }
+
       margin: 0;
       padding-top: 60px;
-      padding-bottom: 60px;
+      padding-bottom: 40px;
       color: $text-color;
       text-align: center;
       font-weight: 400;
-      font-size: 28px;
+      font-size: 18px;
+    }
+
+    .product-list {
+      @include breakpoint(md) {
+        padding-bottom: 100px;
+      }
+
+      padding-bottom: 20px;
     }
   }
 

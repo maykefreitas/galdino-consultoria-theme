@@ -19,23 +19,34 @@
   position: relative;
   margin: 0 auto 50px;
   padding: 0;
+  padding-bottom: 50px;
+  min-height: 360px;
+  height: auto;
   border-color: $border-color-base;
   background-color: $light;
 
   .logo {
+    @include breakpoint(sm) {
+      height: 230px;
+    }
+
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 230px;
 
     img {
-      @include translate(-50%, -50%);
+      @include breakpoint(sm) {
+        @include translate(-50%, -50%);
 
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: auto;
-      height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: 100%;
+      }
+
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -46,15 +57,20 @@
 
     display: flex;
     padding: 0 $padding-large-horizontal + 5;
+    height: 70px;
 
     align-items: center;
     justify-content: center;
 
     .title {
+      @include breakpoint(sm) {
+        font-size: 20px;
+      }
+
       color: $text-color;
       text-align: center;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 17px;
     }
   }
 
@@ -66,9 +82,13 @@
     line-height: 1.3;
 
     .final-price {
+      @include breakpoint(sm) {
+        font-size: 28px;
+      }
+
       display: block;
       font-weight: bold;
-      font-size: 28px;
+      font-size: 22px;
     }
 
     .base-price {
@@ -78,9 +98,14 @@
     }
 
     .full-frice {
+      @include breakpoint(sm) {
+        font-size: 16px;
+      }
+
       display: block;
       margin-top: 6px;
       font-weight: 300;
+      font-size: 14px;
     }
   }
 

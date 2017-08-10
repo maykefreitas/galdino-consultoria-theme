@@ -7,6 +7,13 @@
 
       $('.timeago').timeago();
 
+      if (window.innerWidth < 768) {
+        $('img[data-mobile]').each(function (i, el) {
+          const $el = $(el);
+          $el.attr('src', $el.data('mobile'));
+        });
+      }
+
       $(document).trigger('app:bind:global');
     },
 
