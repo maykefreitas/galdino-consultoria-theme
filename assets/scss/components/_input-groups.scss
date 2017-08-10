@@ -137,6 +137,8 @@
   // element above the siblings.
   > .btn {
     position: relative;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
     + .btn {
       margin-left: -1px;
     }
