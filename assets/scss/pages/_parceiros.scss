@@ -10,4 +10,15 @@
     font-weight: 400;
     font-size: 18px;
   }
+
+  .partners-slider {
+    @include breakpoint(sm) {
+      text-align: center;
+
+      .slide {
+        display: inline-block;
+        margin: 12px;
+      }
+    }
+  }
 }

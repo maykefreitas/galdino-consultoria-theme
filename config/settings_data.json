@@ -64,7 +64,7 @@
           "cta_title": "Últimas vagas! Faça já a inscrição e ganhe desconto!"
         },
         "featured": {
-          "cover": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/galdino.1502212696.png",
+          "cover": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/e5tVA5bAA98?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen><\/iframe>",
           "title": "Curso: Como obter <b>sucesso</b> em entrevistas",
           "subtitle": "Faça já a inscrição e ganhe desconto!",
           "old_price": "399,00",
@@ -117,57 +117,57 @@
         },
         "partners": [
           {
-            "image": "https://unsplash.it/140/80?image=0",
+            "image": "https://unsplash.it/154/98?image=0",
             "name": "Parceiro 1",
             "url": "https://google.com"
           },
           {
-            "image": "https://unsplash.it/140/80?image=2",
+            "image": "https://unsplash.it/154/98?image=2",
             "name": "Parceiro 2",
             "url": ""
           },
           {
-            "image": "https://unsplash.it/140/80?image=3",
+            "image": "https://unsplash.it/154/98?image=3",
             "name": "Parceiro 3",
             "url": "https://google.com"
           },
           {
-            "image": "https://unsplash.it/140/80?image=4",
+            "image": "https://unsplash.it/154/98?image=4",
             "name": "Parceiro 4",
             "url": ""
           },
           {
-            "image": "https://unsplash.it/140/80?image=5",
+            "image": "https://unsplash.it/154/98?image=5",
             "name": "Parceiro 5",
             "url": "https://google.com"
           },
           {
-            "image": "https://unsplash.it/140/80?image=6",
+            "image": "https://unsplash.it/154/98?image=6",
             "name": "Parceiro 6",
             "url": "https://google.com"
           },
           {
-            "image": "https://unsplash.it/140/80?image=7",
+            "image": "https://unsplash.it/154/98?image=7",
             "name": "Parceiro 7",
             "url": ""
           },
           {
-            "image": "https://unsplash.it/140/80?image=8",
+            "image": "https://unsplash.it/154/98?image=8",
             "name": "Parceiro 8",
             "url": ""
           },
           {
-            "image": "https://unsplash.it/140/80?image=9",
+            "image": "https://unsplash.it/154/98?image=9",
             "name": "Parceiro 9",
             "url": ""
           },
           {
-            "image": "https://unsplash.it/140/80?image=10",
+            "image": "https://unsplash.it/154/98?image=10",
             "name": "Parceiro 10",
             "url": ""
           },
           {
-            "image": "https://unsplash.it/140/80?image=11",
+            "image": "https://unsplash.it/154/98?image=11",
             "name": "Parceiro 11",
             "url": ""
           }

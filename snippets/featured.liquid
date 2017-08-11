@@ -2,7 +2,15 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <img class="cover" src="{{ settings.view.featured.cover }}" alt="{{ settings.view.featured.title }}">
+        {% if settings.view.featured.cover contains '<' %}
+          <div class="embed-responsive embed-responsive-16by9">
+            <div class="embed-responsive-item">
+              {{ settings.view.featured.cover }}
+            </div>
+          </div>
+        {% else %}
+          <img class="cover" src="{{ settings.view.featured.cover }}" alt="{{ settings.view.featured.title }}">
+        {% endif %}
       </div>
       <div class="col-sm-6">
         <div class="product-info">

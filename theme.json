@@ -8,5 +8,11 @@
     "school_id": 1,
     "theme_id": 1,
     "token": "local"
+  },
+  "production": {
+    "url": "https://galdino-consultoria.myedools.com",
+    "school_id": 6579,
+    "theme_id": 1290,
+    "token": "e652ddf974ac274ca6d7d7df3f4f7657:b364cca58427dc49ccd6ceed2c107d87"
   }
 }

@@ -147,7 +147,7 @@
         "key": "view.featured.cover",
         "type": "input",
         "templateOptions": {
-          "label": "Url da Imagem",
+          "label": "Url da Imagem ou Vídeo em iframe, embed, etc.",
           "required": true,
           "placeholder": "https://example.com/my-image.jpg"
         }
