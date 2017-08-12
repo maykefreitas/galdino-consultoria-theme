@@ -46,6 +46,18 @@
   {% endif %}
 
   <div class="call-to-action">
-    <a href="/{{ product.slug }}" class="btn btn-primary btn-block">Saiba Mais</a>
+    {% assign link = '' %}
+    {% for topic in product.topics %}
+      {% assign topic_title = topic.title | downcase %}
+      {% if topic_title == 'link' %}
+        {% assign link = topic.description | strip_html %}
+      {% endif %}
+    {% endfor %}
+
+    {% if link.size > 0 %}
+      <a href="{{ link }}" class="btn btn-primary btn-block">Saiba Mais</a>
+    {% else %}
+      <a href="/{{ product.slug }}" class="btn btn-primary btn-block">Saiba Mais</a>
+    {% endif %}
   </div>
 </div>
