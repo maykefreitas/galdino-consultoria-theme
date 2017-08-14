@@ -5,6 +5,7 @@
     const $slider = $('.slider');
 
     $('.owl-carousel', $slider).owlCarousel({
+      autoplay: true,
       loop: true,
       nav: true,
       dots: true,
