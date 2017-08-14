@@ -276,7 +276,7 @@
   },
   {
     "name": "Destaque 2",
-    "id": "7",
+    "id": "8",
     "settings": [
       {
         "key": "view.featured2.cover",
@@ -335,7 +335,7 @@
   },
   {
     "name": "Quem Somos",
-    "id": "8",
+    "id": "9",
     "settings": [
       {
         "key": "view.quem_somos.cover",
@@ -350,7 +350,7 @@
   },
   {
     "name": "Parceiros",
-    "id": "9",
+    "id": "10",
     "settings": [
       {
         "type": "repeatSection",
@@ -389,7 +389,7 @@
   },
   {
     "name": "Footer",
-    "id": "10",
+    "id": "11",
     "settings": [
     ]
   }
