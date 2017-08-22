@@ -1,0 +1,10 @@
+.contact-success-page {
+  h1 {
+    @include breakpoint(md) {
+      margin-top: 150px;
+    }
+
+    margin-bottom: 25px;
+    color: $brand-primary;
+  }
+}

@@ -2,7 +2,8 @@
   "current": "Elegance",
   "presets": {
     "Elegance": {
-      "style": {},
+      "style": {
+      },
       "view": {
         "general": {
           "favicon": "",
@@ -22,44 +23,38 @@
             {
               "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner001.1502161519.png",
               "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile01.1502161506.png",
-              "link": "http://www.galdinoconsultoria.com.br/como-obter-sucesso-em-entrevistas",
-              "blank": false,
-              "$$hashKey": "object:1214"
+              "link": "https://google.com",
+              "blank": true
             },
             {
               "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner002.1502161507.png",
               "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile02.1502161504.png",
               "link": "",
-              "blank": false,
-              "$$hashKey": "object:1215"
+              "blank": false
             },
             {
               "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner003.1502161509.png",
               "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile03.1502161502.png",
               "link": "",
-              "blank": false,
-              "$$hashKey": "object:1216"
+              "blank": false
             },
             {
               "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner004.1502161511.png",
               "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile04.1502161503.png",
               "link": "",
-              "blank": false,
-              "$$hashKey": "object:1217"
+              "blank": false
             },
             {
               "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner005.1502161513.png",
               "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile05.1502161502.png",
               "link": "",
-              "blank": false,
-              "$$hashKey": "object:1218"
+              "blank": false
             },
             {
               "image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/banner006.1502161514.png",
               "mobile_image": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/bannermobile06.1502161505.png",
               "link": "",
-              "blank": false,
-              "$$hashKey": "object:1219"
+              "blank": false
             }
           ],
           "products_title": "Cursos Presenciais",
@@ -69,49 +64,41 @@
           "cta_title": "Últimas vagas! Faça já a inscrição e ganhe desconto!"
         },
         "featured": {
-          "cover": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tb6J-0jc2es\" frameborder=\"0\" allowfullscreen></iframe>",
+          "cover": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/e5tVA5bAA98?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen><\/iframe>",
           "title": "Curso: Como obter <b>sucesso</b> em entrevistas",
           "subtitle": "Faça já a inscrição e ganhe desconto!",
           "old_price": "399,00",
           "price": "299,00",
           "installment_times": 12,
-          "installment_price": "24,91",
+          "installment_price": "26,66",
           "cta": "Matricule-se já! Últimas Vagas!",
           "cta_btn_text": "Matricule-se",
-          "cta_btn_link": "http://www.galdinoconsultoria.com.br/como-obter-sucesso-em-entrevistas",
-          "cta_btn_blank": false,
+          "cta_btn_link": "https://google.com",
+          "cta_btn_blank": true,
           "topics": [
             {
-              "text": "Conheça as exigências do entrevistador",
-              "$$hashKey": "object:1333"
+              "text": "Conheça as exigências do entrevistador"
             },
             {
-              "text": "Aprenda a elaborar uma redação eficaz",
-              "$$hashKey": "object:1334"
+              "text": "Aprenda a elaborar uma redação eficaz"
             },
             {
-              "text": "Saiba tudo sobre Dinâmica de Grupo",
-              "$$hashKey": "object:1335"
+              "text": "Saiba tudo sobre Dinâmica de Grupo"
             },
             {
-              "text": "Ganhe carga horária complementar",
-              "$$hashKey": "object:1336"
+              "text": "Ganhe carga horária complementar"
             },
             {
-              "text": "Entenda como ser aprovado em uma entrevista",
-              "$$hashKey": "object:1337"
+              "text": "Entenda como ser aprovado em uma entrevista"
             },
             {
-              "text": "Aprenda a elaborar um currículo de sucesso",
-              "$$hashKey": "object:1338"
+              "text": "Aprenda a elaborar um currículo de sucesso"
             },
             {
-              "text": "Tenha segurança na entrevista",
-              "$$hashKey": "object:1339"
+              "text": "Tenha segurança na entrevista"
             },
             {
-              "text": "Entenda como vender sua imagem",
-              "$$hashKey": "object:1340"
+              "text": "Entenda como vender sua imagem"
             }
           ],
           "bottom_text": "Receba o certificado ao término do curso!"
@@ -121,19 +108,71 @@
           "title": "Ministramos treinamentos e cursos personalizados <b>inCompany</b>.",
           "subtitle": "A Galdino Consultoria vai até você!",
           "btn_text": "Saiba Mais",
-          "btn_link": "https://galdino-consultoria.myedools.com/pages/contato",
-          "btn_blank": false
+          "btn_link": "https://google.com",
+          "btn_blank": true
         },
         "contato": {
           "cover": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/contact.1502343182.png",
-          "cover_mobile": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/contact-mobile.1502343181.png"
+          "cover_mobile": "https://s3.amazonaws.com/core_development/org-edools/default/1/assets/assets/contact-mobile.1502343181.png",
+          "email": "mayke.sargento@gmail.com",
+          "back_page": "https://galdino-consultoria.myedools.com/pages/contato-enviado",
+          "subject": "Escola Galdino Consultoria"
         },
         "partners": [
           {
-            "image": "https://edools-3-production.s3.amazonaws.com/org-6555%2Fschool-6579%2F23c0c635255325434a6f99f039bc27da%2Faula_na_tv.png",
-            "name": "Aula na TV",
-            "url": "",
-            "$$hashKey": "object:1405"
+            "image": "https://unsplash.it/154/98?image=0",
+            "name": "Parceiro 1",
+            "url": "https://google.com"
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=2",
+            "name": "Parceiro 2",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=3",
+            "name": "Parceiro 3",
+            "url": "https://google.com"
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=4",
+            "name": "Parceiro 4",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=5",
+            "name": "Parceiro 5",
+            "url": "https://google.com"
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=6",
+            "name": "Parceiro 6",
+            "url": "https://google.com"
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=7",
+            "name": "Parceiro 7",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=8",
+            "name": "Parceiro 8",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=9",
+            "name": "Parceiro 9",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=10",
+            "name": "Parceiro 10",
+            "url": ""
+          },
+          {
+            "image": "https://unsplash.it/154/98?image=11",
+            "name": "Parceiro 11",
+            "url": ""
           }
         ]
       }

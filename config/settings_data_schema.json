@@ -345,6 +345,44 @@
           "required": true,
           "placeholder": "https://example.com/my-image.jpg"
         }
+      },
+      {
+        "key": "view.contato.cover_mobile",
+        "type": "input",
+        "templateOptions": {
+          "label": "Url da Imagem para Mobile",
+          "required": true,
+          "placeholder": "https://example.com/my-image.jpg"
+        }
+      },
+      {
+        "template": "<h3>Formulário</h3>"
+      },
+      {
+        "key": "view.contato.email",
+        "type": "input",
+        "templateOptions": {
+          "label": "Email de Destino",
+          "required": true
+        }
+      },
+      {
+        "key": "view.contato.back_page",
+        "type": "input",
+        "templateOptions": {
+          "label": "Página de Sucesso",
+          "required": true,
+          "placeholder": "/pages/sucesso"
+        }
+      },
+      {
+        "key": "view.contato.subject",
+        "type": "input",
+        "templateOptions": {
+          "label": "Assunto",
+          "required": true,
+          "placeholder": "Escola Galdino Consultoria"
+        }
       }
     ]
   },

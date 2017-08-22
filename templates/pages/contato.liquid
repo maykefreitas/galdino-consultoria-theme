@@ -18,32 +18,39 @@
       <div class="col-sm-6">
         <div class="page-content">
           <h2>Contato</h2>
-          <form action="#">
+          <form id="contact-form" action="https://formspree.io/{{ settings.view.contato.email }}" method="post">
+            <input type="hidden" name="_language" value="pt"/>
+            <input type="hidden" name="_subject" value="{{ settings.view.contato.subject }}">
+            <input type="hidden" name="_next" value="{{ settings.view.contato.back_page }}">
+            <input type="text" name="_gotcha" style="display:none" />
+
             <p>Para verificar a disponibilidade dos cursos entre em contato pelo formulário abaixo:</p>
             <div class="form-group">
               <label for="name">Nome:</label>
-              <input type="text" class="form-control" name="name" id="name">
+              <input type="text" class="form-control" name="Nome" id="name" required>
             </div>
             <div class="form-group">
               <label for="name">E-mail:</label>
-              <input type="email" class="form-control" name="email" id="email">
+              <input type="email" class="form-control" name="Email" id="email" required>
             </div>
             <div class="form-group">
               <label for="name">Telefone:</label>
-              <input type="text" class="form-control" name="phone" id="phone">
+              <input type="text" class="form-control" name="Telefone" id="phone">
             </div>
             <div class="form-group">
               <label for="name">Assunto:</label>
-              <select class="form-control" name="subject" id="subject">
-                <option>Selecione</option>
-                <option>Item 1</option>
-                <option>Item 2</option>
-                <option>Item 3</option>
+              <select class="form-control" name="Assunto" id="subject" required>
+                <option value="Cursos Incompany">Cursos Incompany</option>
+                <option value="Cursos Online">Cursos Online</option>
+                <option value="Cursos Presenciais">Cursos Presenciais</option>
+                <option value="Dúvidas">Dúvidas</option>
+                <option value="Reclamações">Reclamações</option>
+                <option value="Sugestões">Sugestões</option>
               </select>
             </div>
             <div class="form-group">
               <label for="name">Mensagem:</label>
-              <textarea class="form-control" name="message" id="message" rows="8"></textarea>
+              <textarea class="form-control" name="Mensagem" id="message" rows="8" required></textarea>
             </div>
             <div class="form-group text-right">
               <button type="submit" class="btn btn-primary">Enviar</button>
