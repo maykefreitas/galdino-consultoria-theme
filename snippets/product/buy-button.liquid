@@ -1,26 +1,38 @@
+{% assign link = '' %}
+{% for topic in product.topics %}
+  {% assign topic_title = topic.title | downcase %}
+  {% if topic_title == 'link' %}
+    {% assign link = topic.description | strip_html %}
+  {% endif %}
+{% endfor %}
+
 {% assign first_option = product.payment_options[0] %}
 
-<div class="btn-group">
-  {% if product.payment_options.size > 1 %}
-    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      {{ 'product.buy' | t }}
-    </a>
+{% if link.size > 0 %}
+  <a href="{{ link }}" class="btn btn-primary">Saiba Mais</a>
+{% else %}
+  <div class="btn-group">
+    {% if product.payment_options.size > 1 %}
+      <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        {{ 'product.buy' | t }}
+      </a>
 
-    <ul class="dropdown-menu">
-      {% for option in product.payment_options %}
-        <li>
-          <a id="add-to-cart-product-{{ product.id }}-{{ option.id }}"
-             href="{{ product | add_to_cart_path: option }}">
-            {{ option.price | money_option_presentation_with_taxes: option.kind, option.period, gateway }}
+      <ul class="dropdown-menu">
+        {% for option in product.payment_options %}
+          <li>
+            <a id="add-to-cart-product-{{ product.id }}-{{ option.id }}"
+               href="{{ product | add_to_cart_path: option }}">
+              {{ option.price | money_option_presentation_with_taxes: option.kind, option.period, gateway }}
 
-            {% if option.trials > 0 %}
-              <span>{{ 'product.trial' | t: count: option.trials }}</span>
-            {% endif %}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    {{ 'product.buy' | t | add_to_cart_link: product, first_option, 'btn btn-primary' }}
-  {% endif %}
-</div>
+              {% if option.trials > 0 %}
+                <span>{{ 'product.trial' | t: count: option.trials }}</span>
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {{ 'product.buy' | t | add_to_cart_link: product, first_option, 'btn btn-primary' }}
+    {% endif %}
+  </div>
+{% endif %}
