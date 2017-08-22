@@ -334,11 +334,11 @@
     ]
   },
   {
-    "name": "Quem Somos",
+    "name": "Contato",
     "id": "9",
     "settings": [
       {
-        "key": "view.quem_somos.cover",
+        "key": "view.contato.cover",
         "type": "input",
         "templateOptions": {
           "label": "Url da Imagem",
