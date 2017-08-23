@@ -47,9 +47,17 @@
       <div class="col-md-3">
         <div class="footer-newsletter">
           <p class="title">Inscreva-se e receba notícias e novidades!</p>
-          <form action="#">
-            <input type="text" class="form-control" placeholder="Email">
-            <button class="btn btn-outline-secondary btn-sm">Cadastrar</button>
+          <form action="http://d-app.uolhost.uol.com.br/integracao" method="post">
+            <!-- Config -->
+            <input type="hidden" name="CON_ID" value="76402.60e599277bca61cf50973ee5450382c5">
+            <!--<input type="hidden" name="DESTINO" value="https://galdino-consultoria.myedools.com/pages/email-cadastrado">-->
+            <input type="hidden" name="GRUPOS_CADASTRAR" value="">
+            <input type="hidden" name="GRUPOS_DESCADASTRAR" value="">
+            <input type="hidden" name="SMT_RECEBER" value="1">
+            <!-- End Config -->
+
+            <input type="email" class="form-control" placeholder="Email" name="SMT_email">
+            <button type="submit" class="btn btn-outline-secondary btn-sm" name="submit">Cadastrar</button>
           </form>
         </div>
       </div>
